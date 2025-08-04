@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lana Ferzan Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+     <nav>
+    <div class="logo">LF</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div> <!-- Hamburger icon -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+    <section class="hero">
+      <h1>Hello, I'm <span>Lana Ferzan</span></h1>
+      <p>Informatics and technology undergraduate engineer</p>
+      <a href="#projects" class="btn">View My Work</a>
+        <div class="hero-image">
+        <img src="pics/picofme (7).png" alt="Your photo">
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I am a creative professional with a passion for designing responsive Websites and Applications. 
+        My background combines design thinking with front-end development / app dev skills.</p>
+      <a href="cv.pdf" download class="btn_d">Download Resume</a>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="pics/fitness.png" alt="Project 1">
+          <h3>Fitness Website</h3>
+          <p>Strong Body Mind is a sleek, dark-themed fitness website designed to help users discover and explore a variety of exercises categorized by muscle group. Featuring a fixed sidebar for quick navigation, a stylish top navigation bar, and a responsive exercise grid, the site combines functionality with a bold visual aesthetic. Each exercise block includes a name, image, and brief description to guide users through different movements, promoting both strength and wellness. Built with HTML and CSS, the site
+             demonstrates effective layout techniques and user-friendly design principles.</p>
+          <a href="https://strong-body-mind.netlify.app/" class="project-link">View Project</a>
+        </div>
+        <div class="project-card">
+          <img src="pics/calculator.png" alt="Project 1">
+          <h3>Basic Calculator Website</h3>
+          <p>This simple yet functional web-based calculator allows users to perform basic arithmetic operations including addition, subtraction, multiplication, and division. Designed with a clean and minimalistic interface, the calculator is intuitive to use and responsive across devices. It’s ideal for quick calculations and demonstrates foundational
+             front-end development skills using HTML, CSS, and JavaScript.</p>
+          <a href="https://lanaferzan.github.io/Basic-calculator/" class="project-link">View Project</a>
+        </div>
+        <!-- Add more project cards here -->
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Flutter / Dart</li>
+        <li>Figma</li>
+        <li>SQL</li>
+        <li>Java</li>
+        <li>Python</li>
+        <!-- Add more skills -->
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Lana Ferzan. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+
+
+</body>
+
+</html>

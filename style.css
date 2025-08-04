@@ -1,0 +1,429 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color:#0b0b26;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* Navigation */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: #0b0b26;
+  box-shadow: 0 2px 10px #0b0b26;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #f23eb6;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f23eb6;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom right,#0b0b26,#2d0d33,#8b0a8b,#f23eb6);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.hero h1 span {
+  color: #f23eb6;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ffe2f6;
+  margin-bottom: 2rem;
+}
+
+.hero .btn {
+  padding: 0.8rem 1.5rem;
+  background-color: #f23eb6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #d732a1;
+}
+
+.hero-image {
+  margin-top: 2rem;
+}
+
+.hero-image img {
+  width: 240px;
+  height: auto;
+  border-radius: 50%;
+  border: 8px solid #ffffff;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #d732a1;
+}
+
+.btn_d{
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  background-color: #f23eb6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.btn_d:hover {
+  background-color: #d732a1;
+}
+
+/* About */
+#about p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #f1d8e9;
+}
+
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 8rem;
+}
+
+.project-card {
+  width: 450px;
+  background-color: #0d0d31;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 10px 10px 0px #f23eb63c;
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  margin: 0.5rem 0;
+  color: #f23eb6;
+}
+
+.project-card p {
+  color: #d4d4f7;
+  font-size: 0.80rem;
+  margin-bottom: 1rem;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #f23eb6;
+  font-weight: 600;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  background-color: #0d0d31;
+  color: #d2d2f4;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Contact */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #1616502d;
+  background-color: #0d0d31;
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ffffff9d;
+}
+
+button.btn {
+  align-self: center;
+  padding: 0.8rem 2rem;
+  background-color: #f23eb6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+  background-color: #bf5ba1;
+}
+
+/* Footer */
+footer {
+  background-color: #0d0d2d;
+  padding: 2rem;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 3rem;
+}
+
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #f768c6;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #f9a2dd;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #f23eb6;
+  cursor: pointer;
+}
+
+
+/* Responsive Layouts */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1.5rem;
+    position: relative;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    order: 1;
+  }
+
+  .menu-toggle {
+    display: block;
+    order: 2;
+    margin-left: auto;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #0b0b26;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-image img {
+    width: 160px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .project-card {
+    padding: 1.2rem;
+    width: 100%;
+  }
+
+  .skills-list {
+    gap: 0.6rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.95rem;
+  }
+
+  button.btn,
+  .btn_d {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 3rem 1.5rem;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-card p {
+    font-size: 0.75rem;
+  }
+
+  .skills-list li {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  input,
+  textarea {
+    padding: 0.6rem 0.8rem;
+  }
+
+  button.btn,
+  .btn_d {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer {
+    padding: 1.5rem;
+  }
+
+  .social-links a {
+    margin: 0 0.5rem;
+  }
+}
