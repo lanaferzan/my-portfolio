@@ -277,8 +277,9 @@ footer {
 /* Responsive Layouts */
 @media (max-width: 768px) {
   header nav {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     padding: 1rem 1.5rem;
     position: relative;
   }
@@ -286,6 +287,7 @@ footer {
   .logo {
     font-size: 1.2rem;
     order: 1;
+    margin-right: auto;
   }
 
   .menu-toggle {
@@ -318,11 +320,11 @@ footer {
   }
 
   .hero {
-    padding: 3rem 1rem;
+    padding: 10rem 1rem;
   }
 
   .hero h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .hero p {
@@ -330,12 +332,18 @@ footer {
   }
 
   .hero-image img {
-    width: 160px;
+    width: 280px;
   }
 
   .project-grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+  }
+  .project-grid h3{
+    font-size: 15px;
+  }
+    .project-grid p{
+    font-size: 10px;
   }
 
   .project-card {
